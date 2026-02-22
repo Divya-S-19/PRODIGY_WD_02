@@ -1,0 +1,65 @@
+/* LIGHT MODE */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg,#70cad0,#66a6ff);
+    transition: 0.4s;
+}
+
+/* DARK MODE */
+body.dark {
+    background: linear-gradient(135deg,#141e30,#243b55);
+}
+
+/* GLASS EFFECT */
+.container {
+    backdrop-filter: blur(15px);
+    background: rgba(255,255,255,0.2);
+    border-radius: 15px;
+    padding: 40px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    width: 350px;
+}
+
+/* TIMER */
+#display {
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+/* BUTTONS */
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    background: rgba(255,255,255,0.3);
+    color: white;
+}
+
+button:hover {
+    background: rgba(0,0,0,0.5);
+}
+
+/* MODE TOGGLE */
+.toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 18px;
+}
+
+/* LAP LIST */
+#laps {
+    max-height: 150px;
+    overflow-y: auto;
+    text-align: left;
+}
